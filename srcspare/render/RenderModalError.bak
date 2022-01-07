@@ -1,0 +1,42 @@
+import React from 'react';
+import stateUtil from '../util/stateUtil'
+import './Modal.css'
+
+const RenderModalError=({errorSt,setErrorSt})=>{
+    const {message}=errorSt
+
+return(
+    <div className="Modal-background">
+        <div className="Modal-box">
+            <div className="Modal-header">
+                <div>
+                    <h2>เกิดข้อผิดพลาด!</h2>
+                </div>
+            </div>
+            <div className="Modal-body">
+                <div className ="flex-center-center">
+                    {/*<p>Unsuccessfull Request</p>*/}
+                    {
+                    message?<p>{message}</p>:null
+                    }
+                </div>
+            </div>
+            <div className="Modal-footer">
+                <div>
+                    <button
+                        onClick={e=>{
+                            const tempSt={...errorSt,
+                                         message:null,showModalError:false}
+                            setErrorSt(tempSt)
+                        }}
+                    >กลับ</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+)}
+
+export default RenderModalError
+               

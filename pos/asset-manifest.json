@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pos/static/css/main.468fc827.chunk.css",
+    "main.js": "/pos/static/js/main.ad2902f0.chunk.js",
+    "main.js.map": "/pos/static/js/main.ad2902f0.chunk.js.map",
+    "runtime-main.js": "/pos/static/js/runtime-main.b609b0a3.js",
+    "runtime-main.js.map": "/pos/static/js/runtime-main.b609b0a3.js.map",
+    "static/js/2.9ed7ed9d.chunk.js": "/pos/static/js/2.9ed7ed9d.chunk.js",
+    "static/js/2.9ed7ed9d.chunk.js.map": "/pos/static/js/2.9ed7ed9d.chunk.js.map",
+    "index.html": "/pos/index.html",
+    "precache-manifest.ca9386ea72e91fe29537695f0753a853.js": "/pos/precache-manifest.ca9386ea72e91fe29537695f0753a853.js",
+    "service-worker.js": "/pos/service-worker.js",
+    "static/css/main.468fc827.chunk.css.map": "/pos/static/css/main.468fc827.chunk.css.map",
+    "static/js/2.9ed7ed9d.chunk.js.LICENSE.txt": "/pos/static/js/2.9ed7ed9d.chunk.js.LICENSE.txt",
+    "static/media/RenderModalError.bak": "/pos/static/media/RenderModalError.b0ec9a73.bak",
+    "static/media/App2.css": "/pos/static/media/icecream.96feb646.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b609b0a3.js",
+    "static/js/2.9ed7ed9d.chunk.js",
+    "static/css/main.468fc827.chunk.css",
+    "static/js/main.ad2902f0.chunk.js"
+  ]
+}

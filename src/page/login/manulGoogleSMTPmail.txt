@@ -1,0 +1,25 @@
+const nodemailer=require('nodemailer')
+
+const smtpTransport = nodemailer.createTransport({
+    host:'smtp.gmail.com',
+    port:587,
+    auth:{
+        user:"mmdigitzone@gmail.com",
+        pass:"zalsflpzalxfrmuz"
+    }
+})
+
+async function run(){
+    let sendResult=await smtpTransport.sendMail({
+        form:'mmdigitzone@gmail.com',
+        to: 'mr2nikom@gmail.com',
+        subject:'Email from digitzon not spam2',
+        text:"I would like to send you reset password",
+        html:"<body><h1>Hellow</h1><p>aaaaaaaaaaa</p></body>"
+
+    })
+
+    console.log(sendResult)
+}
+
+run().catch(err=>console.error(err))

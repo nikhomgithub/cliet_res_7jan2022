@@ -1,0 +1,99 @@
+.home-hero {
+    height:100vh; width:100vw;
+    /*opacity: 0.6;*/
+    /*background: url("../../images/waterfall.jpg") center/cover no-repeat transparent;*/
+    /*background-color:rgb(51,51,153);*/
+
+    position:fixed;
+    top:0;left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+  }
+.home-bg-screen{
+    height:100%; width:100%;
+    background-color: rgba(150,150,150,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(0deg, rgba(38,68,120,1) 0%, rgba(40,68,116,0.99) 44%, rgba(250,250,250,1) 100%);*/
+    background: rgb(63,243,251);
+    background: radial-gradient(circle, rgba(63,243,251,0.9161290322580645) 0%, rgba(63,97,251,1) 100%);
+}
+
+
+
+.home-box{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+
+}
+
+
+.home-tile:hover{
+    transform:scale(1.02);
+    transition:transform 100ms linear;
+}
+
+.home-link{
+    width:8rem;
+    height:8rem;
+    border: gray solid 1px;
+    background: rgb(236,170,120);
+    background: linear-gradient(0deg, rgba(236,170,120,1) 14%, rgba(255,255,255,1) 94%);
+    display:grid;
+    place-items:center;
+    border-radius: 30%;
+    box-shadow: 5px 5px 20px rgb(10,10,10);
+    margin:1rem;
+}
+.home-link:hover{
+    /*background:#F0BE98;*/
+    background:#EBE30E;
+    border:1px solid #EBE30E;
+}
+.home-icon{
+    font-size:5rem;
+}
+
+.home-grid{
+    width:70vw;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    grid-auto-rows:20vh;
+}
+
+
+@media (max-width: 1600px) {
+    .home-grid{
+        width:70vw;
+        grid-template-columns:2fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home-grid{
+        width:80vw;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .home-grid{
+        width:90vw;
+        grid-template-columns:1fr 1fr;
+    }
+}
+  /*
+  .roomsHero {
+    background-image: url("./images/room-2.jpeg");
+    min-height: 60vh;
+  }
+  */
+  

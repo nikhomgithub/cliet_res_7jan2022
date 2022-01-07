@@ -1,0 +1,1017 @@
+ตั้งค่า
+  - ค่าสำหรับ select
+  - ค่าสำหรับ routeAuth 
+
+บิลจ่าย
+  - ค้นหาบิล --> แสดง หน้า filter Modal เลือก ค้นหาบิล 
+  - เปลี่ยนโหมดแสดงผล --> แสดงแบบ grid แสดง แบบตาราง 
+  - เพิ่มบิล
+  - ลบบิล ลบได้ครั้งละ หนึ่ง บิล หรือ หลายๆ บิล 
+  - แก้ไขบิล  
+  - ปิด 
+
+บิลจ่าย > รายการบิลจ่าย 
+  - ค้นหาสินค้า จากรายการสินค้า  
+        หน้าสินค้า แบบ group - table 
+  - จัดกับรายการการสินค้าไว้ ในความจำชั่วคราว 
+  - ลบรายการสินค้าในความจำชั่วคราว 
+  - นำเข้ารายการสินค้าในความจำชั่วคราว 
+
+ค้นหาบิล  
+เพิ่มบิล 
+ลบบิล 
+บันทึกบิล
+
+เปิดได้ ครั้งละ 5 บิล ทั้งบิลเก่า บิลใหม่ ความแตกต่างคือสี ของ ตาราง 
+เขียว #6B5B95
+ครีม #F0EAD6
+เทา #EDF1FF
+ฟ้าหม่น  #9BB7D4
+
+{
+    "data": [
+        {
+            "_id": "6107af8868fd3f001a125b5d",
+            "tableName": "basicDataTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125b5e",
+                    "colName": "id",
+                    "lb": "ไอดี",
+                    "type": "number",
+                    "width": "50",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b5f",
+                    "colName": "routeAddress",
+                    "lb": "url",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b60",
+                    "colName": "routeName",
+                    "lb": "ชื่อสิทธิ์",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b61",
+                    "colName": "userLevel",
+                    "lb": "กลุ่มผู้มีสิทธิ์",
+                    "type": "array",
+                    "width": "350",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125b62",
+            "tableName": "productTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125b63",
+                    "colName": "selectedLine",
+                    "lb": "_",
+                    "type": "radio",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b64",
+                    "colName": "id",
+                    "lb": "ID",
+                    "type": "number",
+                    "width": "65",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b65",
+                    "colName": "barcode",
+                    "lb": "บาร์โคด",
+                    "type": "string",
+                    "width": "65",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b66",
+                    "colName": "productName",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b67",
+                    "colName": "groupId",
+                    "lb": "ไอดีกลุ่ม",
+                    "type": "number",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b68",
+                    "colName": "groupName",
+                    "lb": "ชื่อกลุ่ม",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b69",
+                    "colName": "unit",
+                    "lb": "หน่วย",
+                    "type": "string",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6a",
+                    "colName": "price",
+                    "lb": "ราคา",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6b",
+                    "colName": "isRawMat",
+                    "lb": "เป็นวัตถุดิบ",
+                    "type": "boolean",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6c",
+                    "colName": "stock",
+                    "lb": "ยอดสต็อค",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6d",
+                    "colName": "order",
+                    "lb": "ยอดจอง",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6e",
+                    "colName": "plan",
+                    "lb": "ยอดแผน",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b6f",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b70",
+                    "colName": "photoUrl1",
+                    "lb": "รูป",
+                    "type": "arrayPhoto",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125b71",
+            "tableName": "productDetailTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125b72",
+                    "colName": "id",
+                    "lb": "ไอดี",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b73",
+                    "colName": "barcode",
+                    "lb": "บาร์โค้ด",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b74",
+                    "colName": "productName",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "240",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b75",
+                    "colName": "groupId",
+                    "lb": "ไอดีกลุ่ม",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b76",
+                    "colName": "groupName",
+                    "lb": "ชื่อกลุ่ม",
+                    "type": "string",
+                    "width": "90",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b77",
+                    "colName": "quantity",
+                    "lb": "จำนวน",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b78",
+                    "colName": "unit",
+                    "lb": "หน่วย",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b79",
+                    "colName": "price",
+                    "lb": "ราคา",
+                    "type": "number",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b7a",
+                    "colName": "result",
+                    "lb": "รวม",
+                    "type": "number",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b7b",
+                    "colName": "isRawMat",
+                    "lb": "เป็นวัตถุดิบ",
+                    "type": "boolean",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b7c",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125b7d",
+            "tableName": "productDetailTableTemplateForForm",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125b7e",
+                    "colName": "selectedLine",
+                    "lb": "_",
+                    "type": "radio",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b7f",
+                    "colName": "id",
+                    "lb": "ไอดี",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b80",
+                    "colName": "barcode",
+                    "lb": "บาร์โค้ด",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b81",
+                    "colName": "productName",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "240",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b82",
+                    "colName": "groupId",
+                    "lb": "ไอดีกลุ่ม",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b83",
+                    "colName": "groupName",
+                    "lb": "ชื่อกลุ่ม",
+                    "type": "string",
+                    "width": "90",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b84",
+                    "colName": "quantity",
+                    "lb": "จำนวน",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b85",
+                    "colName": "unit",
+                    "lb": "หน่วย",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b86",
+                    "colName": "price",
+                    "lb": "ราคา",
+                    "type": "number",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b87",
+                    "colName": "result",
+                    "lb": "รวม",
+                    "type": "number",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b88",
+                    "colName": "isRawMat",
+                    "lb": "เป็นวัตถุดิบ",
+                    "type": "boolean",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b89",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125b8a",
+            "tableName": "partnerTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125b8b",
+                    "colName": "selectedLine",
+                    "lb": "_",
+                    "type": "radio",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b8c",
+                    "colName": "id",
+                    "lb": "ID",
+                    "type": "number",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b8d",
+                    "colName": "title",
+                    "lb": "คำนำหน้า",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b8e",
+                    "colName": "name",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b8f",
+                    "colName": "phone",
+                    "lb": "โทรศัพท์",
+                    "type": "array",
+                    "width": "120",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b90",
+                    "colName": "partnerType",
+                    "lb": "ประเภทคู่ค้า",
+                    "type": "string",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b91",
+                    "colName": "address",
+                    "lb": "ที่อยู่",
+                    "type": "arrayObject",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b92",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125b93",
+                    "colName": "photoUrl1",
+                    "lb": "รูป",
+                    "type": "arrayPhoto",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125b94",
+            "tableName": "transactionTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107afbd68fd3f001a125bc9",
+                    "colName": "selectedLine",
+                    "lb": "_",
+                    "type": "radio",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bca",
+                    "colName": "id",
+                    "lb": "ID",
+                    "type": "number",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bcb",
+                    "colName": "date",
+                    "lb": "วันที่",
+                    "type": "date",
+                    "width": "90",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bcc",
+                    "colName": "remindDate",
+                    "lb": "วันที่เตือน",
+                    "type": "date",
+                    "width": "167",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bcd",
+                    "colName": "branch",
+                    "lb": "สาขา",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bce",
+                    "colName": "transactionName",
+                    "lb": "ชื่อเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bcf",
+                    "colName": "transactionType",
+                    "lb": "ประเภทเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd0",
+                    "colName": "transactionStatus",
+                    "lb": "สถานะเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd1",
+                    "colName": "active",
+                    "lb": "แอคทีฟ",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd2",
+                    "colName": "effectStock",
+                    "lb": "กระทบสต็อก",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd3",
+                    "colName": "effectOrder",
+                    "lb": "กระทบจอง",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd4",
+                    "colName": "effectPlan",
+                    "lb": "กระทบแผน",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd5",
+                    "colName": "partnerId",
+                    "lb": "ไอดีคู่ค้า",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd6",
+                    "colName": "partnerType",
+                    "lb": "ประเภทคู่ค้า",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd7",
+                    "colName": "title",
+                    "lb": "คำนำหน้า",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd8",
+                    "colName": "name",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bd9",
+                    "colName": "total",
+                    "lb": "รวม",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bda",
+                    "colName": "reduction",
+                    "lb": "ส่วนลด",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bdb",
+                    "colName": "tax1",
+                    "lb": "ภาษี 1",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bdc",
+                    "colName": "tax2",
+                    "lb": "ภาษี 2",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bdd",
+                    "colName": "grandTotal",
+                    "lb": "สุทธิ",
+                    "type": "number",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bde",
+                    "colName": "phone",
+                    "lb": "โทรศัพท์",
+                    "type": "array",
+                    "width": "110",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125bdf",
+                    "colName": "address",
+                    "lb": "ที่อยู่",
+                    "type": "object",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125be0",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107afbd68fd3f001a125be1",
+                    "colName": "photoUrl1",
+                    "lb": "รูป",
+                    "type": "arrayPhoto",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": "6107af8868fd3f001a125bae",
+            "tableName": "transactionLogTableTemplate",
+            "id": 1,
+            "template": [
+                {
+                    "_id": "6107af8868fd3f001a125baf",
+                    "colName": "status",
+                    "lb": "สถานะ",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb0",
+                    "colName": "selectedLine",
+                    "lb": "_",
+                    "type": "radio",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb1",
+                    "colName": "id",
+                    "lb": "ID",
+                    "type": "number",
+                    "width": "40",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb2",
+                    "colName": "date",
+                    "lb": "วันที่",
+                    "type": "date",
+                    "width": "90",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb3",
+                    "colName": "remindDate",
+                    "lb": "วันที่เตือน",
+                    "type": "date",
+                    "width": "90",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb4",
+                    "colName": "branch",
+                    "lb": "สาขา",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb5",
+                    "colName": "transactionName",
+                    "lb": "ชื่อเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb6",
+                    "colName": "transactionType",
+                    "lb": "ประเภทเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb7",
+                    "colName": "transactionStatus",
+                    "lb": "สถานะเอกสาร",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb8",
+                    "colName": "active",
+                    "lb": "แอคทีฟ",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bb9",
+                    "colName": "effectStock",
+                    "lb": "กระทบสต็อก",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bba",
+                    "colName": "effectOrder",
+                    "lb": "กระทบจอง",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bbb",
+                    "colName": "effectPlan",
+                    "lb": "กระทบแผน",
+                    "type": "string",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bbc",
+                    "colName": "partnerId",
+                    "lb": "ไอดีคู่ค้า",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bbd",
+                    "colName": "partnerType",
+                    "lb": "ประเภทคู่ค้า",
+                    "type": "number",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bbe",
+                    "colName": "title",
+                    "lb": "คำนำหน้า",
+                    "type": "string",
+                    "width": "60",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bbf",
+                    "colName": "name",
+                    "lb": "ชื่อ",
+                    "type": "string",
+                    "width": "100",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc0",
+                    "colName": "total",
+                    "lb": "รวม",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc1",
+                    "colName": "reduction",
+                    "lb": "ส่วนลด",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc2",
+                    "colName": "tax1",
+                    "lb": "ภาษี 1",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc3",
+                    "colName": "tax2",
+                    "lb": "ภาษี 2",
+                    "type": "number",
+                    "width": "70",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc4",
+                    "colName": "grandTotal",
+                    "lb": "สุทธิ",
+                    "type": "number",
+                    "width": "80",
+                    "showCol": true,
+                    "showColHead": true,
+                    "showSum": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc5",
+                    "colName": "phone",
+                    "lb": "โทรศัพท์",
+                    "type": "array",
+                    "width": "110",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc6",
+                    "colName": "address",
+                    "lb": "ที่อยู่",
+                    "type": "object",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc7",
+                    "colName": "remark",
+                    "lb": "หมายเหตุ",
+                    "type": "string",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                },
+                {
+                    "_id": "6107af8868fd3f001a125bc8",
+                    "colName": "photoUrl1",
+                    "lb": "รูป",
+                    "type": "arrayPhoto",
+                    "width": "200",
+                    "showCol": true,
+                    "showColHead": true
+                }
+            ],
+            "__v": 0
+        }
+    ],
+    "count": 7,
+    "lastRecordId": 1
+}
+
+  

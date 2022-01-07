@@ -1,0 +1,23 @@
+https://developers.google.com/products?authuser=0
+https://www.google.com/recaptcha
+https://www.youtube.com/watch?v=UPv2Y6NrgYU
+https://www.npmjs.com/package/react-google-recaptcha
+https://www.google.com/u/2/recaptcha/admin/site/499432962
+
+
+ลงทะเบียนไว้กับ domain นี้ mm.digitzone.net เป็น owner
+
+ใช้กับฟอร์ม loginform
+
+https://www.google.com/u/2/recaptcha/admin/site/499432962/settings
+
+localhost:
+mmdigitzone.net
+www.mmdigitzone.net
+
+siteKey
+6LcCvsQdAAAAAAqWKtgK3Tb6l3LYBjtCVrlaIog0
+
+
+secreteKey
+6LcCvsQdAAAAAJFv_Aa4ODMq5vDhrI9ePWrjcYfs
